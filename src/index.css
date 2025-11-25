@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'YekanBakh_Light';
+    src: url('./assets/fonts/YekanBakh-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'YekanBakh_Regular';
+    src: url('./assets/fonts/YekanBakh-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'YekanBakh_Bold';
+    src: url('./assets/fonts/YekanBakh-Bold.ttf') format('truetype');
+}
+
+
+
+@theme {
+    --font-YekanBakh_Light: "YekanBakh_Light", YekanBakh_Light;
+    --font-YekanBakh_Bold: "YekanBakh_Bold", YekanBakh_Bold;
+    --font-YekanBakh_Regular: "YekanBakh_Regular", YekanBakh_Regular;
+    --font-Ray: "Ray", Ray;
+    --font-Ray_bold: "Ray_bold", Ray_bold;
+}
+
+:root{
+    font-family: "YekanBakh_Regular" !important;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #e7f3fa;
+    border-radius: '25px';
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+    border-radius: 25px;
+}
+
+
+
+.rmdp-input {
+    height: 25px !important;
+    width: 202px !important;
+    border-radius: 3px !important;
+    padding-bottom: 4px !important;
+}
+
+.custom-input:focus {
+    outline: none;
+    border: 1px solid #0c8af8;
+    box-shadow: 0 0 10px 2px #0074d9;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: '25px';
+
+    border-radius: 100pt;
+}
+
+html,
+body,
+#root {
+
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #84d9df;
+    border-radius: '25px';
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.custom-input {
+  border-radius: 15px;
+  border: 1px #0c8af8 solid;
+  padding: 4px 12px;
+  background-color: white;
+  height: 22px;
+  box-shadow: 0 0 2px #0074d9;
+}
+
+.custom-input:focus {
+  outline: none;
+  border: 1px solid #0c8af8;
+  box-shadow: 0 0 10px 2px #0074d9;
+}
